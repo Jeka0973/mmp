@@ -548,8 +548,6 @@ const getCategories = objCats => {
   let categories = objCats.allGoods.getCategories.payload.CategoryFind
   const ulCats = document.getElementById('rootCats')
   ulCats.innerHTML = ''
-  ulCats.style.color = '#171718'
-  ulCats.style.fontSize = '15px'
   ulCats.addEventListener('mouseover', function (event) {
     event.target.style.color = '#5BB2B5'
   })
@@ -563,6 +561,8 @@ const getCategories = objCats => {
     let aElement = document.createElement('a')
     aElement.style.textDecoration = 'none'
     liElement.style.marginBottom = '15px'
+    aElement.style.color = '#171718'
+    aElement.style.fontSize = '15px'
     aElement.id = obj._id
     aElement.href = `#/category/${obj._id}`
     aElement.innerHTML = '&#8226&nbsp' + obj.name
@@ -600,11 +600,6 @@ const getBasket = objBasket => {
       let currGood = allGoods[key].good
       let divRowOneGood = document.createElement('div')
       divRowOneGood.className = 'rowOneGood'
-
-      // let divButtonDel = document.createElement('div')
-      // let buttonDel = document.createElement('button')
-      // buttonDel.className = 'del'
-      // buttonDel.innerText = '\u2715'
 
       let divGoodPhoto = document.createElement('div')
       let img = document.createElement('img')
