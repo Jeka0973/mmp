@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imag</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,600;0,700;1,300;1,400&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="headerLogo">
+      <img src="img/Logo.png" alt="Logo">
+      <div>
+        <span class="headerText">ММР </span>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="kassa">
+      <div class="headerItems">
+        <ul>
+          <li><a id='loginRegistrForm' href="#/loginRegistrForm/">Авторизация</a></li>
+          <li><a href="#/orderHistory/">История заказов</a></li>
+        </ul>
+      </div>
+      <div>
+        <span id="currUser"></span>
+        <button id="logout" style="display: none;">Выйти</button>
+      </div>
+
+      <div style="position: relative;"></div>
+      <a href="#/basket/">
+        <img class="basketIco" src="img/basket.png" alt="basket">
+      </a>
+      <span id='goodsCounter'></span>
+    </div>
+
+
+    </div>
+  </header>
+
+
+  <main>
+    <div class='content'>
+      <section id=" contentHeader">
+        <div class="contentHeaderBody">
+          <br>
+          <p id="categoryPath"></p>
+          <br>
+          <h2 id="currentCategory"></h2>
+        </div>
+
+      </section>
+
+
+      <section id="contentBody">
+
+
+        <div style="margin: auto">
+          <img src="img/main2.png">
+        </div>
+        <!-- <div class=ordersReport>
+          <div class=oneOrder>
+            <div>
+              <h2 class="orderNum"> Ордер номер .от (дата)</h2>
+            </div>
+            <div>
+              <table class="tableData">
+                <tr>
+                  <th>Наименование</th>
+                  <th>Кол-во</th>
+                  <th>Цена за ед.</th>
+                  <th>Сумма</th>
+                </tr>
+                <tr>
+
+                </tr>
+              </table>
+              <div>
+                <p class='sumOfOrder'>Итого:</p>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+
+
+
+
+
+        <!-- <div class="basket">
+          <div class="rowOneGood">
+            <div>
+              <img class='goodPhoto' src="Img/CircleImg">
+            </div>
+            <div>
+              <h2 class="goodName">www</h2>
+            </div>
+            <div>
+              <p class="goodPrice">4444</p>
+            </div>
+
+
+            <div><button class="sub">-</button></div>
+            <div><input type="text" class="goodCount"></div>
+            <div><button class="add"'>+</button></div> 
+            <div>
+              <p class = "goodSumm">4444</p>
+          </div>
+
+          <div><p class="totalSumm">999</p></div>
+          <div><button class="setOrder">Оформить заказ</button></div>
+          </div>
+        </div> -->
+
+
+
+        <!-- <div class="card">
+              <div>
+                <img class=' goodPhoto' src="Img/CircleImg">
+            </div>
+            <div>
+              <h2 class="good">Lorem ipsum dolor sit ipsum</h2>
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat quam
+                corrupti
+                adipisicing elit. Commodi quaerat quam corruptiadipisicing elit. Commodi quaerat quam
+                corruptiadipisicing elit. Commodi quaerat quam corruptiadipisicing
+              </p>
+            </div>
+            <div><button>Go</button></div>
+          </div> -->
+        <!-- 
+                    <div class="oneGood">
+
+                      <div class="slidePos">
+                        <div class="slider">
+
+                          <div class="sliderItem">
+                            <img src="img/img-13.jpg" alt="">
+                          </div>
+
+                          <div class="sliderItem">
+                            <img src="/img/img-14.jpg" alt="">
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+
+                    </div> -->
+        <!-- Авторизация -->
+
+      </section>
+    </div>
+    <aside class="categoryAside">
+      <div class='categories'>
+        <ul id="rootCats">
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+
+  <!-- <div class='categories'>
+    <ul id="rootCats">
+    </ul>
+  </div> -->
+  <div class='goods'>
+    <ul id='goodsInCategory'>
+
+    </ul>
+
+  </div>
+  <footer>
+    <!-- <div class="footerContent">
+      <p>Footer</p>
+    </div> -->
+  </footer>
+
+  <script src="script/script_imag.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="script/slick.min.js"></script>
+  <script src="script/script.js"></script>
+
+</body>
+
+</html>
